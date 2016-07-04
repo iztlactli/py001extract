@@ -8,8 +8,8 @@ page =('<div id="top_bin"><div id="top_content" class="width960">'
 '<div class="xyz float-left"><a href="http://xyz.com">')
 
 start_link = page.find('<a href=')
-link = page.find('http', start_link)
-end_link = page.find('">', start_link)
+link = page.find('"', start_link)
+end_link = page.find('"', link)
 
 url = page[link:end_link]
 
