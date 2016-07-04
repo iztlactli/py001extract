@@ -5,7 +5,7 @@
 
 # page = contents of a web page
 page =('<div id="top_bin"><div id="top_content" class="width960">'
-'<div class="udacity float-left"><a href="http://udacity.com">')
+'<div class="xyz float-left"><a href="http://xyz.com">')
 
 start_link = page.find('<a href=')
 link = page.find('http', start_link)
