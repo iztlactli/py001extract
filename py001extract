@@ -11,6 +11,6 @@ start_link = page.find('<a href=')
 link = page.find('"', start_link)
 end_link = page.find('"', link+1)
 
-url = page[link:end_link]
+url = page[link+1:end_link]
 
 print url
